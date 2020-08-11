@@ -1,0 +1,44 @@
+body
+{
+  background-color:#D9C8A9;
+  padding-bottom: 40px;
+}
+
+h2
+{
+  /*text style*/
+  text-align: center;
+  color:  #42475A;
+  font-size: 26pt;
+  font-family: "high tower text";
+}
+
+img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text_center
+{
+  text-align: center;
+}
+
+.news_border
+{
+  /*border style*/
+  border: 2px solid #42475A;
+  border-radius: 5px;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  /*text style*/
+  text-align: center;
+  font-family: "georgia";
+  font-size: 12pt;
+  color: #42475A;
+}

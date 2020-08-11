@@ -1,0 +1,444 @@
+<html>
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Horror Junkies</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="themes/horror-app-theme.min.css" />
+  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style_sheet.css"/>
+</head>
+
+<body>
+<!Home page>
+  <!header>
+      <div id="home" data-role="page" data-theme="a" data-add-back-btn="true">
+        <div data-role="header" style="overflow:hidden;" data-theme="a">
+          <img class="logo"><img src="images/logo.png" width="350">
+      <div class="ui-body-b">
+        <div data-role="navbar" data-grid="c">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#top">Top 6's</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </div>
+      </div>
+    </div>
+
+  <!content>
+    <div class="ui-body-b">
+      <div data-role="navbar">
+        <ul >
+          <li><a href="#form" data-icon="mail">Join our mailing list!</a></li>
+        </ul>
+      </div>
+
+        <h2>The Latest in Horror News</h2>
+          <p class="news_border">Glen Mazzara Returns to 'The Overlook Hotel'<br>
+            to detail his unmade 'The Shining' prequel!
+          </p>
+          <p class="news_border">Greg McLean's 'Rogue': an underseen killer
+            <br>croc creature feature with teeth!
+          </p>
+    </div>
+
+  <!footer>
+      <div data-role="footer" data-theme="c">
+        <h4>HorrorJunkies&trade; 2020</h4>
+      </div>
+    </div>
+
+<!About us page>
+    <!header>
+      <div id="about" data-role="page" data-theme="a" data-add-back-btn="true">
+        <div data-role="header" style="overflow:hidden;" data-theme="a">
+          <img class="logo"><img src="images/logo.png" width="350">
+
+          <div class="ui-body-b">
+            <div data-role="navbar" data-grid="c">
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#top">Top 6's</a></li>
+                <li><a href="#blog">Blog</a></li>
+              </div>
+            </div>
+          </div>
+
+    <!content>
+      <H2>Our Writers top three movies:</h2>
+      <div class="ui-grid-b">
+        <div class="ui-block-a"><div class="ui-bar ui-bar-b" style="height:60px">Somer Wilson</div></div>
+        <div class="ui-block-b"><div class="ui-bar ui-bar-b" style="height:60px">John Johnson</div></div>
+        <div class="ui-block-c"><div class="ui-bar ui-bar-b" style="height:60px">Bobbi Bowman</div></div>
+
+        <div class="ui-block-a"><div class="ui-bar ui-bar-c">
+            <ul data-role="listview" data-theme="b" data-insert="true">
+              <li>age: 32</li>
+              <li>Favorite Movie: Pet Sematary</li>
+              <li>Hobbies: Bowling, Video Games, photography</li>
+            </ul>
+        </div></div>
+        <div class="ui-block-b"><div class="ui-bar ui-bar-c">
+          <ul data-role="listview" data-theme="b" data-insert="true">
+            <li>age: 41</li>
+            <li>Favorite Movie: Spun</li>
+            <li>Hobbies: Bowling, Golf, carpentry</li>
+          </ul>
+        </div></div>
+        <div class="ui-block-c"><div class="ui-bar ui-bar-c">
+          <ul data-role="listview" data-theme="b" data-insert="true">
+            <li>age: 52</li>
+            <li>Favorite Movie: Jeepers Creepers</li>
+            <li>Hobbies: Making dolls, sewing, painting</li>
+          </ul>
+        </div></div>
+      </div>
+
+    <!footer>
+      <div data-role="footer" data-theme="c">
+        <h4>HorrorJunkies&trade; 2020</h4>
+      </div>
+      </div>
+
+<!Top 6 page>
+  <!header>
+    <div id="top" data-role="page" data-theme="a" data-add-back-btn="true">
+
+      <div data-role="panel" id="myFavorites">
+          <form id="add-to-movieList">
+            <label>What are your favorite Horror Movies?</label>
+            <input type="text" name="movieInput" id="movieInput">
+            <button type="submit">Add to list</button>
+          </form>
+
+          <ol id="movieList"></ol>
+      </div>
+
+      <div data-role="header" style="overflow:hidden;" data-theme="a">
+        <a href="#myFavorites" class="ui-btn ui-btn-inline">Open Panel</a>
+        <img class="logo"><img src="images/logo.png" width="350">
+
+        <div class="ui-body-b">
+          <div data-role="navbar" data-grid="c">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About us</a></li>
+              <li><a href="#top">Top 6's</a></li>
+              <li><a href="#blog">Blog</a></li>
+          </div>
+        </div>
+      </div>
+
+  <!content>
+    <div data-role="content">
+      <ul data-role="listview" data-theme="c" data-filter="true" data-filter-placeholder="Search categories..." data-insert="true">
+        <li data-icon="info"><a href="#list01">all time favorites</a></li>
+        <li><a href="#list02">Halloween Favorites</a></li>
+        <li><a href="#list03">Slashers</a></li>
+        <li><a href="#list04">Zombie Movies</a></li>
+        <li><a href="#list05">Gore</a></li>
+        <li><a href="#list06">Creature Features</a></li>
+      </ul>
+    </div>
+
+  <!footer>
+    <div data-role="footer" data-theme="c">
+      <h4>HorrorJunkies&trade; 2020</h4>
+    </div>
+    </div>
+
+<!Blog page>
+  <!header>
+    <div id="blog" data-role="page" data-theme="a" data-add-back-btn="true">
+      <div data-role="header" style="overflow:hidden;" data-theme="a">
+        <img class="logo"><img src="images/logo.png" width="350">
+
+        <div class="ui-body-b">
+          <div data-role="navbar" data-grid="c">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About us</a></li>
+              <li><a href="#top">Top 6's</a></li>
+              <li><a href="#blog">Blog</a></li>
+          </div>
+        </div>
+      </div>
+
+  <!content>
+    <h2>Coming soon...</h2>
+
+  <!footer>
+    <div data-role="footer" data-theme="c">
+      <h4>HorrorJunkies&trade; 2020</h4>
+    </div>
+    </div>
+
+<!Mailing list form>
+  <!header>
+      <div id="form" data-role="page" data-theme="c" data-add-back-btn="true">
+        <div data-role="header" style="overflow:hidden;" data-theme="a">
+          <img class="logo"><img src="images/logo.png" width="350">
+
+      <div class="ui-body-b">
+        <div data-role="navbar" data-grid="c">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#top">Top 6's</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </div>
+      </div>
+    </div>
+
+  <!content>
+    <div data-role="content">
+        <form action="form.php" method="post">
+
+          <label for="fname">First Name:</label>
+            <input class="fname" type="text" name="fname" id="fname" value="">
+
+          <label for="lname">Last Name:</label>
+            <input class="lname" type="text" name="lname" id="lname">
+
+          <label for="bday">Enter your birthday:</label>
+            <input class="bday" type="date" name="bday" id="bday" value="">
+
+          <fieldset data-role="controlgroup">
+            <legend>Choose your favorite styles of horror movie:</legend>
+            <input class="check1" type="checkbox" name="checkbox01" id="checkbox01" checked="">
+              <label for="checkbox01">Gore</label>
+            <input class="form" type="checkbox" name="checkbox02" id="checkbox02" checked="">
+              <label for="checkbox02">Slasher</label>
+            <input class="form" type="checkbox" name="checkbox03" id="checkbox03" checked="">
+              <label for="checkbox03">Monster</label>
+            <input class="form" type="checkbox" name="checkbox04" id="checkbox04" checked="">
+              <label for="checkbox04">Paranormal</label>
+          </fieldset>
+
+          <label for="email">Email Address:</label>
+            <input class="email" type="text" name="email" id="email" value"">
+
+          <input type="reset" value="Reset Button">
+          <input type="submit" Value="Submit Button">
+
+        </form>
+    </div>
+
+  <!footer>
+      <div data-role="footer" data-theme="c">
+        <h4>HorrorJunkies&trade; 2020</h4>
+      </div>
+    </div>
+
+<!All time favorites:main page>
+  <!header>
+    <div id="list01" data-role="page" data-theme="a" data-add-back-btn="true">
+      <div data-role="header" style="overflow:hidden;" data-theme="a" data-add-back-btn="true">
+        <h2>All Time Favorites</h2>
+    </div>
+
+  <!content>
+      <div data-role="content" data-theme="b">
+        <ol data-role="listview" data-theme="b">
+    			<li><a href="#movie1">Pet Sematary</a></li>
+          <li><a href="#movie2">28 Days Later</a></li>
+    			<li><a href="#movie3">Evil Dead</a></li>
+          <li><a href="#movie4">American Psycho</a></li>
+          <li><a href="#movie5">The Witch</a></li>
+          <li><a href="#movie6">Cabin Fever</a></li>
+        </ol>
+      </div>
+
+  <!footer>
+    <div data-role="footer" data-theme="c">
+        <h4>HorrorJunkies&trade; 2020</h4>
+    </div>
+    </div>
+
+<!All time favorites:Movie links>
+  <div id="movie1" data-role="page" data-theme="a" data-add-back-btn="true">
+    <div data-role="header" data-theme="a" data-add-back-btn="true">
+      <h1>Pet Sematary</h1>
+    </div>
+
+    <div data-role="main" class="ui-content" data-theme="b">
+    <img src="images/pet_sematary.jpg" alt="jQuery" width="205" height="273.5">
+    <p class="text_center">After tragedy strikes, a grieving father discovers an ancient burial<br>
+      ground behind his home with the power to raise the dead.</p>
+      <p class="text_center"><a href="https://www.youtube.com/watch?v=jpjpUOXQZac">Movie Trailer</a>
+    </div>
+
+
+    <div data-role="footer" data-theme="c">
+      <h3>HorrorJunkies&trade; 2020</h3>
+    </div>
+  </div>
+
+  <div id="movie2" data-role="page" data-theme="a" data-add-back-btn="true">
+    <div data-role="header" data-theme="a" data-add-back-btn="true">
+      <h1>28 Days Later</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+    <img src="images/28.jpg" alt="jQuery">
+    <p class="text_center">Four weeks after a mysterious, incurable virus spreads throughout the UK,<br>
+      a handful of survivors try to find sanctuary.</p>
+    <p class="text_center"><a href="https://www.youtube.com/watch?v=c7ynwAgQlDQ">Movie Trailer</a>
+    </div>
+
+    <div data-role="footer" data-theme="c">
+      <h3>HorrorJunkies&trade; 2020</h3>
+    </div>
+  </div>
+
+  <div id="movie3" data-role="page" data-theme="a" data-add-back-btn="true">
+    <div data-role="header" data-theme="a" data-add-back-btn="true">
+      <h1>28 Days Later</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <img src="images/evil_dead.jpg" alt="jQuery">
+      <p class="text_center">Five friends travel to a cabin in the woods, where they unknowingly<br>
+      release flesh-possessing demons.</p>
+      <p class="text_center"><a href="https://www.youtube.com/watch?v=0cQmKgV0cug">Movie Trailer</a>
+    </div>
+
+    <div data-role="footer" data-theme="c">
+      <h3>HorrorJunkies&trade; 2020</h3>
+    </div>
+  </div>
+
+  <div id="movie4" data-role="page" data-theme="a" data-add-back-btn="true">
+    <div data-role="header" data-theme="a" data-add-back-btn="true">
+      <h1>American Psycho</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <img src="images/american_psycho.jpg" alt="jQuery" width="205">
+      <p class="text_center">A wealthy New York City investment banking executive, Patrick Bateman, <br>
+        hides his alternate psychopathic ego from his co-workers and friends as <br>
+        he delves deeper into his violent, hedonistic fantasies.</p>
+      <p class="text_center"><a href="https://www.youtube.com/watch?v=5YnGhW4UEhc">Movie Trailer</a>
+    </div>
+
+    <div data-role="footer" data-theme="c">
+      <h3>HorrorJunkies&trade; 2020</h3>
+    </div>
+  </div>
+
+  <div id="movie5" data-role="page" data-theme="a" data-add-back-btn="true">
+    <div data-role="header" data-theme="a" data-add-back-btn="true">
+      <h1>The Witch</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <img src="images/the_witch.jpg" alt="jQuery" width="205">
+      <p class="text_center">A family in 1630s New England is torn apart by the forces of <br>
+        witchcraft, black magic, and possession.</p>
+      <p class="text_center"><a href="https://www.youtube.com/watch?v=iQXmlf3Sefg">Movie Trailer</a>
+    </div>
+
+    <div data-role="footer" data-theme="c">
+      <h3>HorrorJunkies&trade; 2020</h3>
+    </div>
+  </div>
+
+  <div id="movie6" data-role="page" data-theme="a" data-add-back-btn="true">
+    <div data-role="header" data-theme="a" data-add-back-btn="true">
+      <h1>Cabin Fever</h1>
+    </div>
+
+    <div data-role="main" class="ui-content">
+      <img src="images/cabin_fever.jpg" alt="jQuery">
+      <p class="text_center">Five college graduates rent a cabin in the woods and begin to fall <br>
+        victim to a horrifying flesh-eating virus, which attracts the unwanted attention of <br>
+        the homicidal locals.</p>
+      <p class="text_center"><a href="https://www.youtube.com/watch?v=8bKy8ohYeSg">Movie Trailer</a>
+    </div>
+
+    <div data-role="footer" data-theme="c">
+      <h3>HorrorJunkies&trade; 2020</h3>
+    </div>
+  </div>
+
+</body>
+</body>
+</html>
+
+<script>
+//save first name
+    (function() {
+
+    var input = document.querySelector('.fname');
+
+    function supportsLocalStorage()
+    {
+    return typeof(Storage)!== 'undefined';
+    }
+
+    if (!supportsLocalStorage())
+    {
+    input.value = 'Your browser does not support localStorage.';
+    } else {
+    try
+    {
+    setInterval(function()
+    {
+    localStorage.setItem('autosave', input.value);
+    },
+    1000);
+    } catch (e) {
+    if (e == QUOTA_EXCEEDED_ERR)
+    {
+    alert('Quota exceeded!');
+    }
+    }
+    if (localStorage.getItem('autosave'))
+    {
+    input.value = localStorage.getItem('autosave');
+    };
+    }
+    })();
+</script>
+
+
+<script>
+// Get form, item, and wishlist
+var addToMovieList = document.querySelector('#add-to-movieList');
+var movieInput = document.querySelector('#movieInput');
+var movieList = document.querySelector('#movieList');
+
+addToMovieList.addEventListener('submit', function (event) {
+
+	// Don't submit the form
+	event.preventDefault();
+
+	// Ignore it if the list item is empty
+	if (movieInput.value.length < 1) return;
+
+	// Add item to list
+	movieList.innerHTML += '<li>' + movieInput.value + '</li>';
+
+	// Clear input
+	movieInput.value = '';
+
+	// Save the list to localStorage
+	localStorage.setItem('movieInputs', movieList.innerHTML);
+
+}, false);
+
+// Check for saved list items
+var saved = localStorage.getItem('movieInputs');
+
+// If there are any saved items, update our list
+if (saved) {
+	movieList.innerHTML = saved;
+}
+</script>
